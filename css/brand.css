@@ -1,0 +1,164 @@
+/* 童域玩具 TOYVERSE — 品牌占位样式 */
+img.tv-logo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+img.ph-img {
+  object-fit: cover;
+}
+img.video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 首页大图轮播：给白色标题加一层压暗渐变，保证占位图上的可读性 */
+#c_banner_015_P_978-1733818172459 .e_bannerA-2 .p_img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.55) 0%,
+    rgba(15, 23, 42, 0.32) 42%,
+    rgba(15, 23, 42, 0) 72%
+  );
+}
+
+/* 内页 banner：同样加暗，避免白字压在浅色占位图上 */
+.e_bannerA-2 .p_img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.5) 0%,
+    rgba(15, 23, 42, 0.18) 55%,
+    rgba(15, 23, 42, 0) 100%
+  );
+}
+
+/* ===== 首页 ABOUT US ===== */
+#c_static_001-17473785086510.tv-about {
+  background: #fff;
+  padding: 96px 0 120px;
+  position: relative;
+  overflow: hidden;
+}
+#c_static_001-17473785086510.tv-about::before { display: none; }
+.tv-about-wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+.tv-eyebrow {
+  display: inline-flex; align-items: center;
+  color: #9aa0a6; font-size: 14px; letter-spacing: 3px;
+}
+.tv-eyebrow::after {
+  content: ""; width: 96px; height: 1px; background: #dcdcdc; margin-left: 16px;
+}
+.tv-about-title {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700; font-size: 76px; line-height: 1.05; letter-spacing: 1px;
+  color: #111; margin: 20px 0 30px;
+}
+.tv-about-text {
+  max-width: 1140px; margin: 0 0 56px;
+  font-size: 15px; line-height: 2; color: #666; text-align: justify;
+}
+.tv-stats { display: flex; align-items: flex-start; gap: 26px; flex-wrap: wrap; }
+.tv-stat {
+  flex: 1 1 200px; min-height: 262px; border-radius: 14px;
+  background: #e60012; color: #fff; padding: 26px 24px 30px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  box-sizing: border-box;
+}
+.tv-stat:nth-child(1) { margin-top: 72px; }
+.tv-stat:nth-child(2) { margin-top: 0; }
+.tv-stat:nth-child(3) { margin-top: 56px; }
+.tv-stat:nth-child(4) { margin-top: 8px; }
+.tv-stat-ico svg { width: 38px; height: 38px; fill: #fff; display: block; }
+.tv-stat-label { font-size: 14px; letter-spacing: 1px; opacity: .92; margin: 30px 0 8px; }
+.tv-stat-num {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 42px; font-weight: 700; line-height: 1; letter-spacing: 1px;
+  margin: 0;
+}
+.tv-stat-num span { font-size: 22px; font-weight: 400; margin-left: 2px; }
+
+/* ===== 首页 FAQ ===== */
+.tv-faq { background: #fff; padding: 86px 0 100px; }
+.tv-faq-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.tv-faq-head { text-align: center; margin-bottom: 34px; }
+.tv-faq-head h2 { margin: 0; font-size: 34px; font-weight: 700; color: #111; letter-spacing: 1px; }
+.tv-faq-head p { margin: 8px 0 0; color: #aaa; font-size: 13px; letter-spacing: 6px; }
+.tv-faq-item { border-bottom: 1px solid #ececec; }
+.tv-faq-q {
+  width: 100%; display: flex; align-items: center; gap: 18px;
+  padding: 26px 4px; background: none; border: 0; cursor: pointer;
+  font-family: inherit; font-size: 19px; color: #1b1b1b; text-align: left;
+}
+.tv-faq-idx {
+  flex: none; width: 34px; height: 34px; border-radius: 50%;
+  background: #e60012; color: #fff; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.tv-faq-txt { flex: 1; }
+.tv-faq-plus { flex: none; position: relative; width: 16px; height: 16px; }
+.tv-faq-plus::before, .tv-faq-plus::after {
+  content: ""; position: absolute; background: #9aa0a6; transition: .3s;
+}
+.tv-faq-plus::before { left: 0; top: 7px; width: 16px; height: 2px; }
+.tv-faq-plus::after { left: 7px; top: 0; width: 2px; height: 16px; }
+.tv-faq-item.is-open .tv-faq-plus::after { transform: rotate(90deg); opacity: 0; }
+.tv-faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+.tv-faq-item.is-open .tv-faq-a { max-height: 260px; }
+.tv-faq-a p { margin: 0 0 26px 52px; color: #777; font-size: 15px; line-height: 1.9; }
+
+@media (max-width: 1100px) {
+  .tv-about-title { font-size: 56px; }
+  .tv-stat { flex: 1 1 40%; min-height: 210px; }
+  .tv-stat:nth-child(n) { margin-top: 0; }
+}
+@media (max-width: 768px) {
+  #c_static_001-17473785086510.tv-about { padding: 56px 0 64px; }
+  .tv-about-title { font-size: 40px; }
+  .tv-about-text { font-size: 14px; line-height: 1.9; margin-bottom: 32px; }
+  .tv-stats { gap: 14px; }
+  .tv-stat { flex: 1 1 100%; min-height: 170px; }
+  .tv-faq { padding: 52px 0 60px; }
+  .tv-faq-head h2 { font-size: 26px; }
+  .tv-faq-q { font-size: 16px; padding: 20px 2px; gap: 12px; }
+  .tv-faq-a p { margin-left: 46px; font-size: 14px; }
+}
+
+/* ===== 内页静态 banner ===== */
+.tv-banner { position: relative; height: 500px; overflow: hidden; background: #f5f5f5; }
+.tv-banner-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tv-banner::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(15,23,42,.55) 0%, rgba(15,23,42,.18) 55%, rgba(15,23,42,0) 100%);
+}
+.tv-banner-inner { position: absolute; inset: 0; display: flex; align-items: center; z-index: 2; }
+.tv-banner-title {
+  margin: 0; padding-left: 8%; color: #fff; font-size: 40px; font-weight: 700;
+  letter-spacing: 2px; text-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+@media (max-width: 768px) {
+  .tv-banner { height: 240px; }
+  .tv-banner-title { font-size: 24px; padding-left: 5%; }
+}
+
+/* 语言切换（静态站无多语言版本，隐藏） */
+.e_languageNew-51 { display: none !important; }
+
+/* ===== 语言切换 ===== */
+.tv-lang { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #8a8f99; }
+.tv-lang a { color: #8a8f99; text-decoration: none; transition: color .2s; }
+.tv-lang a:hover { color: #e60012; }
+.tv-lang a.is-on { color: #e60012; font-weight: 700; }
+.tv-lang i { font-style: normal; color: #d0d0d0; }

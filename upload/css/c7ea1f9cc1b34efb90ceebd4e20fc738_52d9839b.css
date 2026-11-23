@@ -1,0 +1,159 @@
+@media screen and (min-width:1250px) {
+  
+    .head-25.down--before {
+       height:0px!important;
+     overflow:hidden;
+      transition: all .5s ease!important;
+    }
+    .head-25.down {
+      
+        transition: all ease .6s!important;
+    }
+    .head-25.zhanDown {
+        transition: all ease .6s!important;
+    }
+    .head-25 .zhanHead-25 {
+        width: 100%;
+    }
+    .head-25 .e_navigationA-2 .specialLeft a {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        background-color: #fcfcfc;
+        font-family: -apple-GlacialI;
+        font-size: 16px;
+        text-align: left;
+        line-height: 1;
+        color: #6c727a;
+    }
+    .head-25 .e_navigationA-2 .specialLeft a:hover,
+    .head-25 .e_navigationA-2 .specialLeft p.cur a {
+        color: #fff;
+        background: #f15a09;
+    }
+}
+@media screen and (max-width:1250px) {
+     .head-25.down--before {
+       padding:0px!important;
+       height:0px!important;
+     overflow:hidden;
+      transition: all .5s ease!important;
+    }
+    #headerBOX.head-25>.p_item.cbox-1-0 {
+        flex: 0 0 50%;
+    }
+
+    #headerBOX.head-25>.p_item.cbox-1-1 {
+        flex: 0 0 50%;
+        position: static;
+    }
+
+    #headerBOX.head-25>.p_item.cbox-1-2 {
+        display: none;
+    }
+
+    #headerBOX.head-25 .e_navigationA-2 .p_navButton {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #headerBOX.head-25 .e_navigationA-2 .p_navContent {
+        display: none;
+    }
+
+    #headerBOX.head-25 .e_navigationA-2 .p_iconBox {
+        display: flex;
+    }
+
+    #headerBOX.head-25 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: static;
+    }
+    #headerBOX.head-25 {
+        position: static;
+    }
+    #headerBOX.head-25 .zhanHead-25 {
+        display: none;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .p_navContent {
+        padding: 10px;
+        height: calc(100vh - var(--top) - 10px);
+        width: 96%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #fbfbfb;
+        z-index: 99;
+        margin: 0 auto;
+        border-radius: 2px;
+        box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+        overflow-y: auto;
+      	top: var(--top);
+    }
+    #headerBOX.head-25 .e_navigationA-2 .p_level1Item {
+        margin-bottom: 15px;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .p_jtIcon{
+        display: none;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .p_level1Item > p a, 
+  	.head-25 .e_navigationA-2 .p_level2Item > p a {
+        line-height: 1;
+        font-size: 16px;
+        font-family: -apple-GlacialI;
+        padding: 8px 0;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .p_level2Box{
+        display: block;
+        box-shadow: none;
+        padding: 0 0 0 26px;
+        width: 100%;
+        position: static;
+        transform: none;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .p_level2Box .manSu {
+        background: none;
+        padding: 0;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .manSpecial-25{
+        position: static;
+        display: block;
+        border: 0;
+        box-shadow: none;
+        background: none;
+        min-height: auto;
+        width: 100%;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .specialLeft {
+        width: 100%;
+        border-right: 0px solid #e6e6e6;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .contentBox .specialRight {
+        display: none;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .specialRight {
+        display: none;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .specialLeft {
+        width: 100%;
+        padding: 0 0 0 26px;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .contentBox .specialLeft {
+        width: 100%;
+        padding: 0 0 0 26px;
+    }
+    #headerBOX.head-25 .e_navigationA-2 .specialLeft p {
+        line-height: 1;
+        font-size: 16px;
+        font-family: -apple-GlacialI;
+        padding: 8px 0;
+        text-align: left;
+        color: #212a36;
+        display: flex;
+    }
+    .zhanHead-25{
+        display: none;
+    }
+}
